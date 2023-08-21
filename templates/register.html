@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+ 
+<div class="page">
+  <h1>Cadastro de Usuário</h1>
+  <form action="{{ url_for('register') }}" method="post"class="formLogin"> 
+    <input type="text" name="username" placeholder="Usuário">
+    <input type="password" name="password" placeholder="Senha">
+    <input type="submit" value="Cadastrar">
+    <p>Já tem uma conta? <a href="{{ url_for('home') }}">Faça login</a></p>
+  </div>
+  </form>
+ 
+
+{% endblock %}
